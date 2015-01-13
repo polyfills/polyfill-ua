@@ -61,4 +61,28 @@ describe('Caniuse', function () {
       version: '10.0.0'
     }))
   })
+
+  it('should return false for well-supported features', function () {
+    var fn = caniuse('calc')
+
+    assert(fn({
+      family: 'ie',
+      version: '8.0.0'
+    }))
+
+    assert(fn({
+      family: 'ie',
+      version: '9.0.0'
+    }))
+
+    assert(!fn({
+      family: 'ie',
+      version: '10.0.0'
+    }))
+
+    assert(!fn({
+      family: 'chrome',
+      version: '36.0.0'
+    }))
+  })
 })
