@@ -8,7 +8,7 @@
   "dependencies": {
     "caniuse-db": "1",
     "debug": "2",
-    "semver": "4",
+    "semver": "5.1.0",
     "useragent": "2"
   },
   "devDependencies": {
