@@ -6,7 +6,7 @@
   "license": "MIT",
   "repository": "polyfills/polyfill-ua",
   "dependencies": {
-    "caniuse-db": "1",
+    "caniuse-db": "1.0.30000383",
     "debug": "2",
     "semver": "4",
     "useragent": "2"
